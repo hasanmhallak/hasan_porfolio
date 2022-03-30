@@ -20,7 +20,7 @@ class ProfileInfo extends StatelessWidget {
             if (Responsive.isMobile(context)) const SizedBox(height: 30),
             const CircleAvatar(
               radius: 50,
-              backgroundImage: AssetImage('images/profile.png'),
+              backgroundImage: AssetImage('images/profile.jpeg'),
             ),
             // const SizedBox(height: 3),
             Text(

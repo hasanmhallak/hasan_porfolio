@@ -13,27 +13,11 @@ const _projects = <Project>[
     title: "Todoey",
     url: 'https://github.com/hasanmhallak/Todoey#todoey',
     description:
-        "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
+        "A very lightwight To-Do app that have a beautiful and friendly user interface.\nStores data locally using SQLite.",
   ),
   Project(
     title: "Personal Portfolio",
-    url: 'lol',
-    description:
-        "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
+    url: 'https://github.com/hasanmhallak/HasanMHallak#hasan-portfolio',
+    description: "Needless to say more. It's this amazing website!",
   ),
-  // Project(
-  //   title: "Chat/Messaging App Light and Dark Theme - Flutter UI",
-  //   description:
-  //       "Today we gonna build messing/chat app #ui using #flutter that runs both Android and iOS devices also has a dark and light theme. We create in total 4 screens all of that support both Dark Theme and Light Theme. At first, we design a welcome screen that contains an image with a tag line also has a skip button.",
-  // ),
-  // Project(
-  //   title: "Welcome page, Login Page and Sign up page - Flutter UI",
-  //   description:
-  //       "In the first part of our complete e-commerce app, we show you how you can create a nice clean onboarding screen for your e-commerce app that can run both Andriod and iOS devices because it builds with flutter. Then on the second episode, we build a Sign in, Forgot Password screen with a custom error indicator.",
-  // ),
-  // Project(
-  //   title: "Covid-19 App - Flutter UI",
-  //   description:
-  //       "We redesign the outlook app also make it responsive so that you can run it everywhere on your phone, tab, or web. In this flutter responsive video, we will show you the real power of flutter. Make mobile, web, and desktop app from a single codebase.",
-  // ),
 ];
