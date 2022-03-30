@@ -13,7 +13,7 @@ class ContactInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Spacer(),
+        // const Spacer(),
         IconButton(
           splashRadius: 16,
           onPressed: () async {

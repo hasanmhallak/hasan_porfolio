@@ -23,7 +23,7 @@ class Experience extends StatelessWidget {
           Skills(),
           Divider(),
           SizedBox(height: Constants.defaultPadding / 2),
-          Text('Contact Me', style: Theme.of(context).textTheme.subtitle2),
+          Text('Contact Me :', style: Theme.of(context).textTheme.subtitle2),
           SizedBox(height: Constants.defaultPadding / 2),
           Row(
             children: [
@@ -82,7 +82,7 @@ class Experience extends StatelessWidget {
             ],
           ),
           SizedBox(height: Constants.defaultPadding / 2),
-          DownloadCV(),
+          // DownloadCV(),
           ContactInfo(),
         ],
       ),
