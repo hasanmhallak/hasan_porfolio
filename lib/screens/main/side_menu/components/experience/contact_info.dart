@@ -24,9 +24,9 @@ class ContactInfo extends StatelessWidget {
         IconButton(
           splashRadius: 16,
           onPressed: () async {
-            await url.launch(Constants.gitlabUrl);
+            await url.launch(Constants.githubUrl);
           },
-          icon: SvgPicture.asset('icons/gitlab.svg'),
+          icon: SvgPicture.asset('icons/github.svg'),
         ),
         IconButton(
           splashRadius: 16,

@@ -57,7 +57,7 @@ class HomeBanner extends StatelessWidget {
                           vertical: Constants.defaultPadding,
                         )),
                     onPressed: () async {
-                      await url.launch(Constants.gitlabUrl);
+                      await url.launch(Constants.githubUrl);
                     },
                     child: const Text(
                       'Explore Now',

@@ -12,7 +12,7 @@ abstract class Constants {
   static const backgroundColor = Color(0xFF1E1E28);
   static const linkedInUrl = 'https://www.linkedin.com/in/hasan-hallak';
   static const twitterUrl = 'https://www.twitter.com/hasanmhallak';
-  static const gitlabUrl = 'https://www.gitlab.com/hasanmhallak';
+  static const githubUrl = 'https://github.com/hasanmhallak';
 
   /// Default padding in the app which is [20.0 pixils].
   static const defaultPadding = 20.0;

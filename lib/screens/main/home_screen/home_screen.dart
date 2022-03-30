@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
     return ListView(
       shrinkWrap: true,
       children: [
-        if ((MediaQuery.of(context).size.width > 340)) const HomeBanner(),
+        if (MediaQuery.of(context).size.width > 340) const HomeBanner(),
         const SizedBox(height: Constants.defaultPadding / 2),
         Text(
           'My Projects',
@@ -26,13 +26,13 @@ class HomeScreen extends StatelessWidget {
         const Responsive(
           mobile: ProjectsGridBuilder(
             crossAxisCount: 1,
-            childAspectRatio: 1.5,
+            childAspectRatio: 2.5,
           ),
           mobileLarge: ProjectsGridBuilder(
             childAspectRatio: 1.1,
             crossAxisCount: 2,
           ),
-          tablet: ProjectsGridBuilder(childAspectRatio: 1),
+          tablet: ProjectsGridBuilder(),
           desktop: ProjectsGridBuilder(),
         ),
       ],

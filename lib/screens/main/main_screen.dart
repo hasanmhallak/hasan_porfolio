@@ -66,47 +66,62 @@ class ProjectsGridBuilder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      shrinkWrap: true,
-      primary: false,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: crossAxisCount,
-        childAspectRatio: childAspectRatio,
-        mainAxisSpacing: Constants.defaultPadding,
-        crossAxisSpacing: Constants.defaultPadding,
-      ),
-      itemCount: projects.length,
-      itemBuilder: (BuildContext context, int index) {
-        return Container(
-          color: Constants.secondaryColor,
-          padding: const EdgeInsets.all(Constants.defaultPadding),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                projects[index].title,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.subtitle2,
-              ),
-              Text(
-                projects[index].description,
-                overflow: TextOverflow.ellipsis,
-                maxLines: Responsive.isMobile(context) ? 3 : 4,
-                style: const TextStyle(height: 1.5),
-              ),
-              const Spacer(),
-              TextButton(
-                onPressed: () async {
-                  await url.launch(projects[index].url);
-                },
-                child: const Text(
-                  'Read more>>',
-                  style: TextStyle(color: Constants.primaryColor),
-                ),
-              ),
-            ],
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        double _width = MediaQuery.of(context).size.width;
+        int checkWidth() {
+          if (_width < 420) {
+            return 1;
+          } else if (Responsive.isMobile(context)) {
+            return 3;
+          } else {
+            return 4;
+          }
+        }
+
+        return GridView.builder(
+          shrinkWrap: true,
+          primary: false,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: crossAxisCount,
+            childAspectRatio: childAspectRatio,
+            mainAxisSpacing: Constants.defaultPadding,
+            crossAxisSpacing: Constants.defaultPadding,
           ),
+          itemCount: projects.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              color: Constants.secondaryColor,
+              padding: const EdgeInsets.all(Constants.defaultPadding),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    projects[index].title,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.subtitle2,
+                  ),
+                  Text(
+                    projects[index].description,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: checkWidth(),
+                    style: const TextStyle(height: 1.5),
+                  ),
+                  const Spacer(),
+                  TextButton(
+                    onPressed: () async {
+                      await url.launch(projects[index].url);
+                    },
+                    child: const Text(
+                      'Read more>>',
+                      style: TextStyle(color: Constants.primaryColor),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
         );
       },
     );
