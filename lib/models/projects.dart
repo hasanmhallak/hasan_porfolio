@@ -13,7 +13,7 @@ const _projects = <Project>[
     title: "Todoey",
     url: 'https://github.com/hasanmhallak/Todoey#todoey',
     description:
-        "A very lightwight To-Do app that have a beautiful and friendly user interface.\nStores data locally using SQLite.",
+        "A very lightweight To-Do app that have a beautiful and friendly user interface.\nStores data locally using SQLite.",
   ),
   Project(
     title: "Personal Portfolio",
