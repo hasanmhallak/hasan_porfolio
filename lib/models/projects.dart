@@ -7,7 +7,7 @@ const _projects = <Project>[
     title: "Repo Viewer",
     url: 'https://github.com/hasanmhallak/Repo-Viewer#repo-viewer',
     description:
-        "A great App to view all your starred project in your Github account.\nYou can star & unstar projects easily and search for any repository using the amazing floating search bar.\nYou can also view the README.md file that is associated with each project.\nStores data locally to support offline mode.",
+        "A production grade app to view all your starred project in your Github account.\nYou can star & unstar projects easily and search for any repository using the amazing floating search bar.\nYou can also view the README.md file that is associated with each project.\nStores data locally to support offline mode.",
   ),
   Project(
     title: "Todoey",
