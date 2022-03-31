@@ -17,7 +17,7 @@ const _projects = <Project>[
   ),
   Project(
     title: "Personal Portfolio",
-    url: 'https://github.com/hasanmhallak/HasanMHallak#hasan-portfolio',
+    url: 'https://github.com/hasanmhallak/hasan_porfolio#hasan-portfolio',
     description: "Needless to say more. It's this amazing website!",
   ),
 ];
