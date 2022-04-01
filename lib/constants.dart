@@ -10,7 +10,7 @@ abstract class Constants {
   static const darkColor = Color(0xFF191923);
   static const bodyTextColor = Color(0xFF8B8B8D);
   static const backgroundColor = Color(0xFF1E1E28);
-  static const linkedInUrl = 'https://www.linkedin.com/in/hasan-hallak';
+  static const linkedInUrl = 'https://www.linkedin.com/in/hasanmhallak';
   static const twitterUrl = 'https://www.twitter.com/hasanmhallak';
   static const githubUrl = 'https://github.com/hasanmhallak';
 
